@@ -3,3 +3,7 @@
 <h2>Purpose: </h2><p>This is a project I'm working on to practice DOM manipulation.</p>
 
 <h4>What I learned:</h4>
+<ul>
+    <li>How to create elements and set the inner text.</li>
+    <li>How to add a new element using appendChild().</li>
+</ul>
