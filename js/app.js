@@ -17,3 +17,9 @@ function init() {
       { id: 10, task: 'Go to bed', completed: false }
     ]
   }
+
+  function addPageTitle() {
+    const heading = document.createElement('h1')
+    heading.innerText = pageTitle;
+    todoList.appendChild(heading);
+  }
