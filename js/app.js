@@ -23,3 +23,8 @@ function init() {
     heading.innerText = pageTitle;
     todoList.appendChild(heading);
   }
+
+  function addTodos() {
+    const ul = document.createElement('ul');
+    todoList.appendChild(ul);
+  }
