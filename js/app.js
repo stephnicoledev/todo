@@ -27,4 +27,10 @@ function init() {
   function addTodos() {
     const ul = document.createElement('ul');
     todoList.appendChild(ul);
+
+    todos.forEach(todo => {
+        const li = document.createElement('li')
+        li.innerText = todo.task
+        ul.appendChild(li)
+    });
   }
