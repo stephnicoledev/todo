@@ -2,6 +2,7 @@ const todoList = document.getElementById('todos');
 let todos = [];
 let pageTitle = '';
 
+// init() will set up the page title and tasks
 function init() {
     pageTitle = 'My Morning Routine';
     todos = [
@@ -18,12 +19,15 @@ function init() {
     ]
   }
 
+
+  // addPageTitle() will add the page title to the DOM
   function addPageTitle() {
     const heading = document.createElement('h1')
     heading.innerText = pageTitle;
     todoList.appendChild(heading);
   }
 
+  // addTodos() will add the task to the DOM
   function addTodos() {
     const ul = document.createElement('ul');
     todoList.appendChild(ul);
@@ -34,3 +38,8 @@ function init() {
         ul.appendChild(li)
     });
   }
+
+
+init();
+addPageTitle();
+addTodos();
