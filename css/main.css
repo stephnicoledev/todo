@@ -54,3 +54,21 @@ input[type="checkbox"] {
     vertical-align: middle;
     margin-top:0px;
 }
+
+a.btn {
+    background-color: rgb(131, 210, 255);
+    color: #fff;
+    font-weight: 300;
+    background-color: #b8b8b8;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 5px auto;
+}

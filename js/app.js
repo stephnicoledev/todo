@@ -30,13 +30,16 @@ function init() {
   // addTodos() will add the task to the DOM
   function addTodos() {
     const ul = document.createElement('ul');
-    todoList.appendChild(ul);
 
     todos.forEach(todo => {
-        const li = document.createElement('li')
-        li.innerText = todo.task
-        ul.appendChild(li)
+      const li = document.createElement('li');
+      li.innerText = todo.task;
+      const checkCircle = document.createElement('i');
+      checkCircle.setAttribute('class', 'far fa-check-circle');
+      li.appendChild(checkCircle);
+      ul.appendChild(li);
     });
+    todoList.appendChild(ul);
   }
 
 
