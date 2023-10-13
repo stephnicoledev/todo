@@ -69,3 +69,13 @@ tasks.forEach(task => {
     }
   });
 });
+
+// Mark all tasks as completed
+const completeAll = document.getElementById('btnCompleteAll');
+
+completeAll.addEventListener('click', () => {
+  tasks.forEach(task => {
+    task.classList.add('completed');
+    task.querySelector('i').classList.add('completed');
+  });
+});
