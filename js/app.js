@@ -48,3 +48,24 @@ function init() {
     addPageTitle();
     addTodos();
   });
+
+// Marking tasks incomplete / complete
+const tasks = document.querySelectorAll('li');
+
+tasks.forEach(task => {
+  task.addEventListener('click', () => {
+    // Marking tasks complete
+    if (!task.classList.contains('completed')) {
+      task.classList.add('completed');
+      task.querySelector('i').classList.add('completed');
+    }
+  });
+  
+  task.addEventListener('click', () => {
+    // Marketing tasks incomplete
+    if (task.classList.contains('completed')) {
+      task.classList.remove('completed');
+      task.querySelector('i').classList.remove('completed');
+    }
+  });
+});
