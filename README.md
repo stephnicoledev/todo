@@ -6,4 +6,5 @@
 <ul>
     <li>How to create elements and set the inner text.</li>
     <li>How to add a new element using appendChild().</li>
+    <li>DOMContentLoaded - an event that fires when the initial HTML document has been loaded and parsed, without waiting for stylesheets, images, etc. to load.</li>
 </ul>

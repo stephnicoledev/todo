@@ -43,6 +43,8 @@ function init() {
   }
 
 
-init();
-addPageTitle();
-addTodos();
+  document.addEventListener("DOMContentLoaded", () => {
+    init();
+    addPageTitle();
+    addTodos();
+  });
