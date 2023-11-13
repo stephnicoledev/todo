@@ -1,19 +1,18 @@
 body {
-    background: rgb(7, 80, 64);
-    background: radial-gradient(circle, rgb(78, 197, 171) 0%, rgb(7, 80, 64) 100%);
+    background: rgb(74,162,244);
+    background: radial-gradient(circle, rgba(74,162,244,1) 0%, rgba(54,131,240,1) 100%);
 }
 
 .todo-list {
-    width: 450px;
-    background: rgb(255, 255, 255);
+    width:450px;
+    background: #fff;
     margin: 50px auto;
     font-family: 'Roboto Condensed', sans-serif;
     border-radius: 10px;
 }
-
 h1 {
     background:#f2f2f2;
-    color:#042709;
+    color:#4b86A6;
     padding:10px;
     font-size:24px;
     text-transform: uppercase;
@@ -22,7 +21,6 @@ h1 {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-
 ul {
     list-style-type: none;
     margin:0px;
@@ -37,7 +35,7 @@ li {
 li:last-child{
     border:0px;
 }
-li.todo-completed {
+li.completed {
     text-decoration: line-through;
     color: darkgray;
 }
@@ -56,19 +54,18 @@ input[type="checkbox"] {
 }
 
 a.btn {
-    background-color: rgb(131, 210, 255);
-    color: #fff;
-    font-weight: 300;
-    background-color: #b8b8b8;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'Roboto Condensed', sans-serif;
+    width:250px;
+    margin: 5px auto;
     display: block;
     box-sizing: border-box;
     font-size: 18px;
-    width: 250px;
-    padding: 10px;
+    padding:10px;
     border-radius: 4px;
-    margin: 5px auto;
+    background-color: rgb(131, 210, 255);
+    font-weight:300;
+    color:#FFFFFF;
+    background-color:#b8b8b8;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration: none;
 }
