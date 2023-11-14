@@ -5,12 +5,12 @@
 
 
 <h2>Notes:</h2>
-<p><strong>Part One Objective:</strong> DOM Manipulation & Event Handling</p>
+<p><strong>Part One Objective:</strong> Make changes to the DOM</p>
 <p><strong>What I learned:</strong></p>
 <ul>
     <li>How to create elements and set their inner text.</li>
     <li>How to add a new element using <em>appendChild()</em>.</li>
-    <li>Add event listeners to DOM elements.</li>
     <li>DOMContentLoaded - an event that fires when the initial HTML document has been loaded and parsed, without waiting for stylesheets, images, etc. to load.</li>
     <li>Manipulating the DOM by adding classes to and removing classes from an element.</li>
+    <li>Add event listeners to DOM elements.</li>
 </ul>

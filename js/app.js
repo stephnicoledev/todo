@@ -38,39 +38,39 @@ function addTodos() {
   todoList.appendChild(ul);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener('DOMContentLoaded', () => {
   init();
   addPageTitle();
   addTodos();
-});
 
-// Marking tasks incomplete / complete
-const tasks = document.querySelectorAll('li');
+  const tasks = document.querySelectorAll('li');
 
-tasks.forEach(task => {
-  task.addEventListener('click', () => {
-    // Marking tasks complete
-    if (!task.classList.contains('completed')) {
+  tasks.forEach((task) => {
+    // when you click on a task mark it completed
+    task.addEventListener('click', () => {
+      if (!task.classList.contains('completed')) {
+        task.classList.add('completed');
+        task.querySelector('i').classList.add('completed');
+      }
+    });
+
+    // when you double click a task remove the completed class
+    task.addEventListener('dblclick', () => {
+      if (task.classList.contains('completed')) {
+        task.classList.remove('completed');
+        task.querySelector('i').classList.remove('completed');
+      }
+    });
+  });
+
+  // mark all tasks as completed
+  const completeAll = document.getElementById('btnCompleteAll');
+  completeAll.addEventListener('click', () => {
+    tasks.forEach((task) => {
       task.classList.add('completed');
       task.querySelector('i').classList.add('completed');
-    }
-  });
-  
-  task.addEventListener('click', () => {
-    // Marketing tasks incomplete
-    if (task.classList.contains('completed')) {
-      task.classList.remove('completed');
-      task.querySelector('i').classList.remove('completed');
-    }
+    });
   });
 });
 
-// Mark all tasks as completed
-const completeAll = document.getElementById('btnCompleteAll');
-
-completeAll.addEventListener('click', () => {
-  tasks.forEach(task => {
-    task.classList.add('completed');
-    task.querySelector('i').classList.add('completed');
-  });
-});
